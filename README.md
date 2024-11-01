@@ -10,6 +10,7 @@ ALXX CRYPTER is a simple file and folder encryption tool written in Python. It a
 
 # IMPORTANT
 *IF YOU USE ENCRYPTOR, ALL FILE NAMES WILL BE LOST.*
+
 *MAKE SURE TO COPY YOUR KEY, YOU WILL HAVE 10 SECONDS FOR IT.*
 
 ## Requirements
