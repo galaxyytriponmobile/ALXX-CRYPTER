@@ -58,24 +58,16 @@ def decrypt_files_and_folders(target_folder, decryption_key, map_file_path):
                 decrypt_file(file_path, decryption_key)
 
 def main():
-    decryption_key = generate_encryption_key()
-    os_type = platform.system()
-    print(f"Detected OS: {os_type}")
+    encryption_key = input("Enter the encryption key you want to use for decryption: ")
     
-    if os_type == "Windows":
-        target_folder = Path("C:/Users", "D:/Users", "A:/Users", "F:/Users")
-    elif os_type in ["Linux", "Darwin"]:
-        target_folder = Path("/etc", "/root")
-    else:
-        print("Unsupported OS.")
-        return
-
-    map_file_path = target_folder / "file_map.txt"
-    if target_folder.exists() and map_file_path.exists():
+    target_folder = input("Enter the path of the folder you want to decrypt: ")
+    target_folder = Path(target_folder)
+    
+    if target_folder.exists():
         print(f"Decrypting files and folders in {target_folder}...")
-        decrypt_files_and_folders(target_folder, decryption_key, map_file_path)
+        decrypt_files_and_folders(target_folder, encryption_key)
     else:
-        print(f"Target folder {target_folder} or map file {map_file_path} does not exist.")
+        print(f"Target folder {target_folder} does not exist.")
 
 if __name__ == "__main__":
     main()
