@@ -6,6 +6,7 @@ import random
 import string
 from pathlib import Path
 
+
 def generate_encryption_key():
     key = input("Enter the encryption key you want to use: ")
     hashed_key = hashlib.sha512(key.encode()).hexdigest()
