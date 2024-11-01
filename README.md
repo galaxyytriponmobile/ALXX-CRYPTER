@@ -8,7 +8,7 @@ ALXX CRYPTER is a simple file and folder encryption tool written in Python. It a
 - **Encrypt Files**: Encrypt files in the specified directory with a chosen key.
 - **Decrypt files**: File names will be lost, but content will be same as before.
 
-  This is for a post hack ecnryption, to kep data safe.😉
+  This is for a post hack ecnryption, to keep data safe.😉
 
 # IMPORTANT
 *IF YOU USE ENCRYPTOR, ALL FILE NAMES WILL BE LOST.*
